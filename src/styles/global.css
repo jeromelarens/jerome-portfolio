@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-sans bg-white text-gray-900
+         dark:bg-[#0b0b0b] dark:text-gray-200;
+}
+
+.code-font {
+  @apply font-mono;
+}
+
+/* ================= TYPOGRAPHY POLISH ================= */
+
+h1, h2, h3 {
+  letter-spacing: -0.015em;
+}
+
+p {
+  line-height: 1.75;
+}
+
+/* Better paragraph rhythm for long reads */
+.reading {
+  max-width: 65ch;
+}
+
+/* Soft section spacing consistency */
+.section {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+/* Subtle divider utility */
+.divider {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(199, 161, 131, 0.4),
+    transparent
+  );
+}
+
+/* ================= SCROLL POLISH ================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* soft snap (not forced) */
+.snap-container {
+  scroll-snap-type: y proximity;
+}
+
+.snap-section {
+  scroll-snap-align: start;
+}
