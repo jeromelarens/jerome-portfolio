@@ -59,7 +59,7 @@ const Home = () => {
             </a>
 
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/jeromelarens"
               target="_blank"
               rel="noreferrer"
               className="px-8 py-3 rounded-xl border border-[#C7A183]/40
